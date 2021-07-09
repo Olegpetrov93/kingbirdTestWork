@@ -7,14 +7,19 @@
 
 import UIKit
 
+enum NetworkError: Error {
+    case noConnection
+    case decodingError
+}
+
 protocol NetworkServiceProtocol {
-    func fetchPhoto(completion: @escaping (Result<[Photo], Error>) -> ())
+    func fetchPhoto(completion: @escaping (Result<[Photo], NetworkError>) -> ())
 }
 
 struct NetworkService: NetworkServiceProtocol {
     
     // MARK: Network
-    func fetchPhoto(completion: @escaping (Result<[Photo], Error>) -> ()) {
+    func fetchPhoto(completion: @escaping (Result<[Photo], NetworkError>) -> ()) {
         guard let url = URL(string: "https://picsum.photos/v2/list?page=1&limit=20") else { return }
         URLSession.shared.dataTask(with: url) { (data, responce, error) in
             if let data = data {
@@ -23,9 +28,11 @@ struct NetworkService: NetworkServiceProtocol {
                     decoder.keyDecodingStrategy = .convertFromSnakeCase
                     let jsonData = try decoder.decode([Photo].self, from: data)
                     completion(.success(jsonData))
-                } catch let error {
-                    completion(.failure(error))
+                } catch {
+                    completion(.failure(.decodingError))
                 }
+            } else {
+                completion(.failure(.noConnection))
             }
         }.resume()
     }
@@ -38,7 +45,12 @@ struct NetworkService: NetworkServiceProtocol {
                 DispatchQueue.main.async {
                     completion(data)
                 }
+            } else {
+                guard let image = UIImage(systemName: "arrow.triangle.2.circlepath.camera") else { return
+                }
+                completion(image.pngData())
             }
         }.resume()
     }
 }
+
