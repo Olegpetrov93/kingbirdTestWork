@@ -8,24 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		6306410626961F58009D7E45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6306410526961F58009D7E45 /* AppDelegate.swift */; };
-		6306410826961F58009D7E45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6306410726961F58009D7E45 /* SceneDelegate.swift */; };
-		6306410A26961F58009D7E45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6306410926961F58009D7E45 /* ViewController.swift */; };
-		6306410D26961F58009D7E45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6306410B26961F58009D7E45 /* Main.storyboard */; };
-		6306411026961F58009D7E45 /* kingbirdTestWork.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6306410E26961F58009D7E45 /* kingbirdTestWork.xcdatamodeld */; };
+		6306410A26961F58009D7E45 /* RootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6306410926961F58009D7E45 /* RootVC.swift */; };
+		6306411026961F58009D7E45 /* PhotoCD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6306410E26961F58009D7E45 /* PhotoCD.xcdatamodeld */; };
 		6306411226961F5A009D7E45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6306411126961F5A009D7E45 /* Assets.xcassets */; };
 		6306411526961F5A009D7E45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6306411326961F5A009D7E45 /* LaunchScreen.storyboard */; };
+		6306411D2696FA3C009D7E45 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6306411C2696FA3B009D7E45 /* PhotoCell.swift */; };
+		630641212696FCA7009D7E45 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630641202696FCA7009D7E45 /* Photo.swift */; };
+		630641232696FFB0009D7E45 /* NetworkServise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630641222696FFB0009D7E45 /* NetworkServise.swift */; };
+		63064127269702C2009D7E45 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63064126269702C2009D7E45 /* Extension.swift */; };
+		638F5AC126978B9D00866112 /* CellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F5AC026978B9D00866112 /* CellVM.swift */; };
+		638F5ACD2697DB6000866112 /* PhotoLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638F5ACC2697DB6000866112 /* PhotoLib.swift */; };
+		63C161EE26975B3F001AF452 /* RootVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C161ED26975B3F001AF452 /* RootVM.swift */; };
+		63C161F02697670C001AF452 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C161EF2697670C001AF452 /* DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6306410226961F58009D7E45 /* kingbirdTestWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kingbirdTestWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6306410526961F58009D7E45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6306410726961F58009D7E45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6306410926961F58009D7E45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6306410C26961F58009D7E45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6306410926961F58009D7E45 /* RootVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootVC.swift; sourceTree = "<group>"; };
 		6306410F26961F58009D7E45 /* kingbirdTestWork.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = kingbirdTestWork.xcdatamodel; sourceTree = "<group>"; };
 		6306411126961F5A009D7E45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6306411426961F5A009D7E45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6306411626961F5A009D7E45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6306411C2696FA3B009D7E45 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		630641202696FCA7009D7E45 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		630641222696FFB0009D7E45 /* NetworkServise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServise.swift; sourceTree = "<group>"; };
+		63064126269702C2009D7E45 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		638F5AC026978B9D00866112 /* CellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellVM.swift; sourceTree = "<group>"; };
+		638F5ACC2697DB6000866112 /* PhotoLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLib.swift; sourceTree = "<group>"; };
+		63C161ED26975B3F001AF452 /* RootVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootVM.swift; sourceTree = "<group>"; };
+		63C161EF2697670C001AF452 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,15 +71,61 @@
 			isa = PBXGroup;
 			children = (
 				6306410526961F58009D7E45 /* AppDelegate.swift */,
-				6306410726961F58009D7E45 /* SceneDelegate.swift */,
-				6306410926961F58009D7E45 /* ViewController.swift */,
-				6306410B26961F58009D7E45 /* Main.storyboard */,
+				638F5ABC26978AF900866112 /* Scene */,
+				630641222696FFB0009D7E45 /* NetworkServise.swift */,
+				63C161EF2697670C001AF452 /* DataSource.swift */,
+				63064126269702C2009D7E45 /* Extension.swift */,
+				638F5ACC2697DB6000866112 /* PhotoLib.swift */,
 				6306411126961F5A009D7E45 /* Assets.xcassets */,
 				6306411326961F5A009D7E45 /* LaunchScreen.storyboard */,
 				6306411626961F5A009D7E45 /* Info.plist */,
-				6306410E26961F58009D7E45 /* kingbirdTestWork.xcdatamodeld */,
+				6306410E26961F58009D7E45 /* PhotoCD.xcdatamodeld */,
 			);
 			path = kingbirdTestWork;
+			sourceTree = "<group>";
+		};
+		638F5ABC26978AF900866112 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				638F5AC22697AAC000866112 /* RootVC */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		638F5ABD26978B0200866112 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6306410926961F58009D7E45 /* RootVC.swift */,
+				6306411C2696FA3B009D7E45 /* PhotoCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		638F5ABE26978B1100866112 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				63C161ED26975B3F001AF452 /* RootVM.swift */,
+				638F5AC026978B9D00866112 /* CellVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		638F5ABF26978B3000866112 /*  Model */ = {
+			isa = PBXGroup;
+			children = (
+				630641202696FCA7009D7E45 /* Photo.swift */,
+			);
+			path = " Model";
+			sourceTree = "<group>";
+		};
+		638F5AC22697AAC000866112 /* RootVC */ = {
+			isa = PBXGroup;
+			children = (
+				638F5ABF26978B3000866112 /*  Model */,
+				638F5ABE26978B1100866112 /* ViewModel */,
+				638F5ABD26978B0200866112 /* View */,
+			);
+			path = RootVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +187,6 @@
 			files = (
 				6306411526961F5A009D7E45 /* LaunchScreen.storyboard in Resources */,
 				6306411226961F5A009D7E45 /* Assets.xcassets in Resources */,
-				6306410D26961F58009D7E45 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,24 +197,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6306410A26961F58009D7E45 /* ViewController.swift in Sources */,
+				630641232696FFB0009D7E45 /* NetworkServise.swift in Sources */,
+				630641212696FCA7009D7E45 /* Photo.swift in Sources */,
+				638F5AC126978B9D00866112 /* CellVM.swift in Sources */,
+				6306410A26961F58009D7E45 /* RootVC.swift in Sources */,
+				6306411D2696FA3C009D7E45 /* PhotoCell.swift in Sources */,
 				6306410626961F58009D7E45 /* AppDelegate.swift in Sources */,
-				6306411026961F58009D7E45 /* kingbirdTestWork.xcdatamodeld in Sources */,
-				6306410826961F58009D7E45 /* SceneDelegate.swift in Sources */,
+				63C161EE26975B3F001AF452 /* RootVM.swift in Sources */,
+				6306411026961F58009D7E45 /* PhotoCD.xcdatamodeld in Sources */,
+				63C161F02697670C001AF452 /* DataSource.swift in Sources */,
+				638F5ACD2697DB6000866112 /* PhotoLib.swift in Sources */,
+				63064127269702C2009D7E45 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6306410B26961F58009D7E45 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6306410C26961F58009D7E45 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6306411326961F5A009D7E45 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,6 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3YGACN3ADP;
 				INFOPLIST_FILE = kingbirdTestWork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +369,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3YGACN3ADP;
 				INFOPLIST_FILE = kingbirdTestWork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,13 +405,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		6306410E26961F58009D7E45 /* kingbirdTestWork.xcdatamodeld */ = {
+		6306410E26961F58009D7E45 /* PhotoCD.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				6306410F26961F58009D7E45 /* kingbirdTestWork.xcdatamodel */,
 			);
 			currentVersion = 6306410F26961F58009D7E45 /* kingbirdTestWork.xcdatamodel */;
-			path = kingbirdTestWork.xcdatamodeld;
+			path = PhotoCD.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
