@@ -14,9 +14,7 @@ final class PhotoCell: UICollectionViewCell {
             guard let viewModel = viewModel else { return }
             name.text = viewModel.author
             autoreleasepool {
-                DispatchQueue.main.async {
                     self.profileImageView.image = viewModel.photoImageSmall
-                }
             }
         }
     }

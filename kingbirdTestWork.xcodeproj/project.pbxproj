@@ -72,8 +72,7 @@
 			children = (
 				6306410526961F58009D7E45 /* AppDelegate.swift */,
 				638F5ABC26978AF900866112 /* Models */,
-				630641222696FFB0009D7E45 /* NetworkServise.swift */,
-				63C161EF2697670C001AF452 /* DataSource.swift */,
+				638F5ACE2698716500866112 /* ServiceLayer */,
 				63064126269702C2009D7E45 /* Extension.swift */,
 				638F5ACC2697DB6000866112 /* PhotoLib.swift */,
 				6306411126961F5A009D7E45 /* Assets.xcassets */,
@@ -126,6 +125,15 @@
 				638F5ABD26978B0200866112 /* View */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		638F5ACE2698716500866112 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				630641222696FFB0009D7E45 /* NetworkServise.swift */,
+				63C161EF2697670C001AF452 /* DataSource.swift */,
+			);
+			path = ServiceLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

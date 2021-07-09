@@ -64,15 +64,9 @@ final class RootViewModel: RootViewModelProtocol, CategoriesDelegate {
     func deletePhoto(indexPath: IndexPath) {
         let photo = snapshots[indexPath.row]
         self.dataSource.deletePhoto(photo: photo)
-        DispatchQueue.main.async {
-            self.view?.reloadView()
-        }
     }
     
     func update(snapshots: [PhotoCD]) {
         self.snapshots = snapshots
     }
 }
-
-
-

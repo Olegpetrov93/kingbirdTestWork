@@ -13,6 +13,7 @@ protocol PhotoCellViewModelProtocol: AnyObject {
     var photoImage: UIImage { get }
     var photoImageSmall: UIImage { get }
 }
+
 final class PhotoCellViewModel: PhotoCellViewModelProtocol {
     
     private var photo: PhotoCD
@@ -36,6 +37,7 @@ final class PhotoCellViewModel: PhotoCellViewModelProtocol {
     init(photo: PhotoCD) {
         self.photo = photo
     }
+    
     var photoImageSmall: UIImage {
         guard let photoData = photo.photo,
               let photoImage = UIImage(data: photoData)?.resizeImage(targetSize: CGSize(width: 150, height: 150)) else { return UIImage() }

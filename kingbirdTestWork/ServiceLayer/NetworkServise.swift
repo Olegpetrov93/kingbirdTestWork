@@ -27,12 +27,18 @@ struct NetworkService: NetworkServiceProtocol {
                     let decoder = JSONDecoder()
                     decoder.keyDecodingStrategy = .convertFromSnakeCase
                     let jsonData = try decoder.decode([Photo].self, from: data)
-                    completion(.success(jsonData))
+                    DispatchQueue.main.async {
+                        completion(.success(jsonData))
+                    }
                 } catch {
-                    completion(.failure(.decodingError))
+                    DispatchQueue.main.async {
+                        completion(.failure(.decodingError))
+                    }
                 }
             } else {
-                completion(.failure(.noConnection))
+                DispatchQueue.main.async {
+                    completion(.failure(.noConnection))
+                }
             }
         }.resume()
     }
@@ -48,7 +54,9 @@ struct NetworkService: NetworkServiceProtocol {
             } else {
                 guard let image = UIImage(systemName: "arrow.triangle.2.circlepath.camera") else { return
                 }
-                completion(image.pngData())
+                DispatchQueue.main.async {
+                    completion(image.pngData())
+                }
             }
         }.resume()
     }
