@@ -1,5 +1,5 @@
 //
-//  RootVM.swift
+//  RootViewModel.swift
 //  kingbirdTestWork
 //
 //  Created by Oleg on 7/8/21.
@@ -11,15 +11,15 @@ protocol RootView: AnyObject {
     func reloadView()
 }
 
-protocol RootVMProtocol: AnyObject {
+protocol RootViewModelProtocol: AnyObject {
     init(view: RootView, networkService: NetworkServiceProtocol, dataSource: DataSource)
     func fetchData()
     func numberOfRows() -> Int
     func deletePhoto(indexPath: IndexPath)
-    func cellViewModel(forIndexPath indexPath: IndexPath) -> CollectionViewCellVMProtocol?
+    func cellViewModel(forIndexPath indexPath: IndexPath) -> PhotoCellViewModelProtocol?
 }
 
-final class RootVM: RootVMProtocol, CategoriesDelegate {
+final class RootViewModel: RootViewModelProtocol, CategoriesDelegate {
     
     weak var view: RootView?
     let networkService: NetworkServiceProtocol
@@ -44,9 +44,9 @@ final class RootVM: RootVMProtocol, CategoriesDelegate {
         return snapshots.count
     }
     
-    func cellViewModel(forIndexPath indexPath: IndexPath) -> CollectionViewCellVMProtocol? {
+    func cellViewModel(forIndexPath indexPath: IndexPath) -> PhotoCellViewModelProtocol? {
         let photo = snapshots[indexPath.row]
-        return CollectionViewCellVM(photo: photo)
+        return PhotoCellViewModel(photo: photo)
     }
     
     func fetchData() {

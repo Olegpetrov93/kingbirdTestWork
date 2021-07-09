@@ -9,7 +9,7 @@ import UIKit
 
 final class PhotoCell: UICollectionViewCell {
     
-    weak var viewModel: CollectionViewCellVMProtocol? {
+    weak var viewModel: PhotoCellViewModelProtocol? {
         willSet(viewModel) {
             guard let viewModel = viewModel else { return }
             name.text = viewModel.author
@@ -17,7 +17,6 @@ final class PhotoCell: UICollectionViewCell {
                 DispatchQueue.main.async {
                     self.profileImageView.image = viewModel.photoImageSmall
                 }
-                
             }
         }
     }

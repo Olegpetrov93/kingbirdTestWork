@@ -1,5 +1,5 @@
 //
-//  RootVC.swift
+//  RootViewController.swift
 //  kingbirdTestWork
 //
 //  Created by Oleg on 7/7/21.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-final class RootVC: UIViewController {
+final class RootViewController: UIViewController {
     
     // MARK: - ViewModel
     
-    var viewModel: RootVMProtocol?
+    var viewModel: RootViewModelProtocol?
     
     // MARK: - Properties
     private enum LayoutConstant {
@@ -75,7 +75,7 @@ final class RootVC: UIViewController {
     }
 }
 // MARK: - CollectionView dataSource, delegate
-extension RootVC: UICollectionViewDataSource, UICollectionViewDelegate {
+extension RootViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel?.numberOfRows() ?? 0
     }
@@ -125,7 +125,7 @@ extension RootVC: UICollectionViewDataSource, UICollectionViewDelegate {
     }
 }
 // MARK: - CollectionView delegate flow layout
-extension RootVC: UICollectionViewDelegateFlowLayout {
+extension RootViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
@@ -154,7 +154,7 @@ extension RootVC: UICollectionViewDelegateFlowLayout {
     }
 }
 // MARK: - Date source delegate
-extension RootVC: RootView {
+extension RootViewController: RootView {
     func reloadView() {
         DispatchQueue.main.async {
             self.collectionView.reloadData()

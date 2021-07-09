@@ -17,10 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let rootVC = RootVC()
+        let rootVC = RootViewController()
         let networkService = NetworkService()
         let dataSource = DataSource()
-        let viewModel = RootVM(view: rootVC, networkService: networkService, dataSource: dataSource)
+        let viewModel = RootViewModel(view: rootVC, networkService: networkService, dataSource: dataSource)
         rootVC.viewModel = viewModel
         
         window?.rootViewController = UINavigationController(rootViewController: rootVC)

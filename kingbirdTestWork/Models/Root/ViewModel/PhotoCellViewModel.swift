@@ -1,5 +1,5 @@
 //
-//  CellVM.swift
+//  PhotoCellViewModel.swift
 //  kingbirdTestWork
 //
 //  Created by Oleg on 7/8/21.
@@ -7,13 +7,13 @@
 
 import UIKit
 
-protocol CollectionViewCellVMProtocol: AnyObject {
+protocol PhotoCellViewModelProtocol: AnyObject {
     var id: String { get }
     var author: String { get }
     var photoImage: UIImage { get }
     var photoImageSmall: UIImage { get }
 }
-final class CollectionViewCellVM: CollectionViewCellVMProtocol {
+final class PhotoCellViewModel: PhotoCellViewModelProtocol {
     
     private var photo: PhotoCD
     
